@@ -1,0 +1,11 @@
+{
+  "name": "myGame",
+  "version": "1.0.0",
+  "dependencies": {
+    "three.js": "~0.70",
+    "three.js-controls": "*",
+    "threex.md2character": "*",
+    "threex.oimo":"*",
+    "threex.grass":"*"
+  }
+}

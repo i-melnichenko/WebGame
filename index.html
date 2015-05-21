@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="./bower_components/three.js/three.min.js"></script>
+    <script src="./bower_components/three.js-controls/src/OrbitControls.js"></script>
+    <script src='./bower_components/threex.md2character/threex.md2character.js'></script>
+    <script src='./bower_components/threex.md2character/threex.md2characterratmahatta.js'></script>
+    <script src='./bower_components/threex.md2character/threex.md2charactercontrols.js'></script>
+    <script src='./bower_components/threex.oimo/vendor/oimo.js'></script>
+    <script src='./bower_components/threex.oimo/threex.oimo.js'></script>
+    <script src='./bower_components/threex.grass/threex.grass.js'></script>
+    <script>
+        Object.extend = function(destination, source) {
+            for (var property in source) {
+                if (source.hasOwnProperty(property)) {
+                    destination[property] = source[property];
+                }
+            }
+            return destination;
+        };
+    </script>
+    <script src="./app/Unit.js"></script>
+    <script src="./app/Enemy.js"></script>
+    <script src="./app/Game.js"></script>
+</head>
+<body>
+    <div id="wrap"></div>
+<script>
+    Game.init();
+    Game.debug();
+</script>
+</body>
+</html>
